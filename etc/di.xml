@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Alaa\ManagedHoliday\Api\HolidayRepositoryInterface"
+                type="Alaa\ManagedHoliday\Model\HolidayRepository"/>
+    <preference for="Alaa\ManagedHoliday\Api\Data\HolidayInterface"
+                type="Alaa\ManagedHoliday\Model\Holiday"/>
+    <preference for="Alaa\ManagedHoliday\Api\Data\HolidaySearchResultInterface"
+                type="Alaa\ManagedHoliday\Model\HolidaySearchResult"/>
+    <preference for="Alaa\ManagedHoliday\Model\Sql\ConditionInterface"
+                type="Alaa\ManagedHoliday\Model\Sql\Condition"/>
+    <preference for="Alaa\ManagedHoliday\Model\SettingsInterface"
+                type="Alaa\ManagedHoliday\Model\Settings"/>
+    <preference for="Alaa\ManagedHoliday\Model\HolidayProviderInterface"
+                type="Alaa\ManagedHoliday\Model\HolidayProvider"/>
+    <preference for="Alaa\ManagedHoliday\Api\HolidaySearchRepositoryInterface"
+                type="Alaa\ManagedHoliday\Model\HolidaySearchRepository"/>
+</config>

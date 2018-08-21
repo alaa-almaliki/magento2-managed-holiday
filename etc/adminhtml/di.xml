@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="\Alaa\ManagedHoliday\Api\HolidayRepositoryInterface">
+        <plugin name="save_holiday_stores" type="\Alaa\ManagedHoliday\Plugin\Adminhtml\SaveHolidayStores"/>
+    </type>
+    <virtualType name="Alaa\ManagedHoliday\Ui\Component\Listing\Column\Holiday\Options"
+                 type="Magento\Cms\Ui\Component\Listing\Column\Cms\Options">
+    </virtualType>
+</config>

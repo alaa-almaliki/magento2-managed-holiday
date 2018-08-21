@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Alaa_ManagedHoliday::holiday"
+             title="Managed Holidays"
+             translate="title"
+             module="Alaa_ManagedHoliday"
+             sortOrder="100"
+             parent="Magento_Sales::sales"
+             action="holiday/holiday/index"
+             resource="Alaa_ManagedHoliday::holiday"/>
+    </menu>
+</config>

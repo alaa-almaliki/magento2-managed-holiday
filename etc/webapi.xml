@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route method="GET" url="/v1/holiday/:id">
+        <service class="Alaa\ManagedHoliday\Api\HolidaySearchRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="GET" url="/v1/holiday/is_holiday">
+        <service class="Alaa\ManagedHoliday\Api\HolidaySearchRepositoryInterface" method="isHoliday"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="GET" url="/v1/holiday/next">
+        <service class="Alaa\ManagedHoliday\Api\HolidaySearchRepositoryInterface" method="nextHolidays"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="GET" url="/v1/holiday/between">
+        <service class="Alaa\ManagedHoliday\Api\HolidaySearchRepositoryInterface" method="between"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
