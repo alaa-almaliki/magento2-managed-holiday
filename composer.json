@@ -2,7 +2,7 @@
   "name": "alaa/magento2-managed-holiday",
   "description": "Magento2 Managed Holiday",
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "magento holiday",
