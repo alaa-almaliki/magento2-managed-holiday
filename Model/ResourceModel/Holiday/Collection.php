@@ -44,6 +44,7 @@ class Collection extends AbstractCollection
                 'main_table.holiday_id=store.holiday_id',
                 ['store.store_id']
             );
+        $this->addFilterToMap($this->getIdFieldName(), 'main_table.' . $this->getIdFieldName());
 
         return $this;
     }
